@@ -1,0 +1,7 @@
+1. To establish a connection in two or different servers to pass parameters in Jenkins job hosted on two servers.
+
+--> We can use Jenkins Api from curl command and execute the curl command in "Execute Windows Batch" build step.
+
+  curl -X POST -u admin:admin "http://{Jenkins_url}/jenkins/job/{Job_Name}/buildWithParameters?version=StudentEnrollmentWithSpring-01.war"
+
+Running this would run the job hosted on other jenkins server along with parameters upstream/downstream withoud master/slave connection between two servers.
